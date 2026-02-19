@@ -1,7 +1,6 @@
-'use clieent'
+'use client'
 
-import {useState, useEffect} from 'react'
-import Link from 'next/link'
+import { useState, useEffect } from 'react'
 import styles from './Navbar.module.css'
 
 export default function Navbar() {
@@ -10,15 +9,15 @@ export default function Navbar() {
     useEffect(()=> {
         const handleScroll = () => setScrolled(window.scrollY > 50)
         window.addEventListener('scroll', handleScroll)
-        return () => window.remove.EventListener('scroll', handleScroll)
+        return () => window.removeEventListener('scroll', handleScroll)
     }, [])
 
     return (
-        <nav classname={`${style.nav} ${scrolled ? styles.scrolled : ''}`}>
-            <a href='#hero' classname={styles.logo}>
+        <nav className={`${styles.nav} ${scrolled ? styles.scrolled : ''}`}>
+            <a href='#hero' className={styles.logo}>
                 Diego <span>.</span> Paloma 
             </a>
-            <ul classname={styles.navlinks}>
+            <ul className={styles.links}>
             <li><a href="#about">Sobre mi</a></li>
             <li><a href="#projects">Proyectos</a></li>
             <li><a href="#skills">Skills</a></li>
