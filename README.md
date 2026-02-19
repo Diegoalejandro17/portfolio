@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌟 Portafolio Personal
 
-## Getting Started
+Portafolio profesional como desarrollador full-stack con Laravel, React y PostgreSQL.
 
-First, run the development server:
+## 📝 Descripción
 
+Este proyecto es mi portafolio personal donde muestro mis habilidades y proyectos como desarrollador de software. Incluye integración avanzada de inteligencia artificial con capacidades de comunicación Agent-to-Agent y Model Context Protocol (MCP), demostrando experiencia en desarrollo backend con Laravel, frontend moderno con React, y gestión de bases de datos con PostgreSQL.
+
+## 🚀 Tecnologías
+
+**Backend:**
+- 🐘 Laravel
+- 🐘 PostgreSQL
+
+**Frontend:**
+- ⚛️ React
+- ⚡ Vite
+
+**IA:**
+- 🤖 Agent-to-Agent Communication
+- 🧠 Model Context Protocol (MCP)
+
+## ⚙️ Instalación
+
+### Backend
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+composer install
+cp .env.example .env
+php artisan key:generate
+php artisan migrate
+php artisan serve
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Frontend
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🔧 Configuración
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Configura tu archivo `.env`:
+```env
+DB_CONNECTION=pgsql
+DB_DATABASE=portafolio
+DB_USERNAME=tu_usuario
+DB_PASSWORD=tu_password
+```
 
-## Learn More
+## 📁 Estructura
+```
+portafolio/
+├── app/
+├── database/migrations/
+├── routes/
+├── frontend/
+│   ├── src/
+│   └── package.json
+└── README.md
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 👨‍💻 Autor
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Diego Alejandro Paloma Díaz**  
+Desarrollador de Software.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📄 Licencia
 
-## Deploy on Vercel
+MIT
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
