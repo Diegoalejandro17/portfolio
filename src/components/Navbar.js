@@ -15,7 +15,7 @@ export default function Navbar() {
     return (
         <nav className={`${styles.nav} ${scrolled ? styles.scrolled : ''}`}>
             <a href='#hero' className={styles.logo}>
-                Diego <span>.</span> Paloma 
+                Paloma <span>.</span> Dev 
             </a>
             <ul className={styles.links}>
             <li><a href="#about">Sobre mi</a></li>
