@@ -1,0 +1,126 @@
+.contact {
+    padding: 8rem 3rem;
+    background: var(--bg);
+}
+
+.sectionLabel {
+    display:flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--cyan);
+    margin-bottom: 1rem;
+}
+
+.sectionLabel span {
+    color: var(--gray2);
+}
+
+.inner {
+    max-width: 700px;
+}
+
+.sectionTitle {
+    font-family: var(--font-display );
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 800;
+    letter-spacing: -2px;
+    line-height: 1;
+    margin-bottom: 2rem;
+}
+
+.desc {
+    font-size: 0.85rem;
+    color: var(--gray);
+    line-height: 2;
+    margin-bottom: 3rem;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    margin-bottom: 3rem;
+}
+
+.linkRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg2);
+    padding: 1.25rem 1.5rem;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.linkRow:hover {
+    background: var(--bg3);
+}
+
+.linkLeft {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.linkIcon {
+    font-size: 1.3rem;
+    color: var(--gray);
+    transition: color 0.3s;
+}
+
+.linkRow:hover .linkIcon {
+    color: var(--purple-hover);
+}
+
+.linkLabel {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--gray);
+}
+
+.linkValue {
+    font-size: 0.8rem;
+    color: var(--white);
+    transition: color 0.3s;
+}
+
+.linkRow:hover .linkValue {
+    color: var(--purple-hover)
+}
+
+.arrow {
+    color: var(--gray2);
+    font-size: 1rem;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.linkRow:hover .arrow {
+    transform: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.75rem;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    background: var(--purple);
+    color: var(--white);
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background: var(--purple-hover);
+    box-shadow: 0 0 30px var(--purple-glow);
+}
+
+@media (max-width: 768px) {
+    .contact { padding: 5rem 1.5rem; }
+}
