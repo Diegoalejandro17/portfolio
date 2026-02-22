@@ -63,12 +63,12 @@ export default function Contact() {
         </div>
         <span className={styles.arrow}>→</span>
       </a>
-      <a href="https://linkedin.com/in/tuusuario" target="_blank" className={styles.linkRow}>
+      <a href="https://www.linkedin.com/in/diego-alejandro-paloma-diaz-ab4008308/" target="_blank" className={styles.linkRow}>
         <div className={styles.linkLeft}>
           <FaLinkedin className={styles.linkIcon} />
           <div>
             <div className={styles.linkLabel}>LinkedIn</div>
-            <div className={styles.linkValue}>linkedin.com/in/tuusuario</div>
+            <div className={styles.linkValue}>Diego Alejandro Paloma Diaz</div>
           </div>
         </div>
         <span className={styles.arrow}>→</span>
@@ -111,7 +111,7 @@ export default function Contact() {
       <button type="submit" className={styles.btn} disabled={status === 'sending'}>
         {status === 'sending' ? 'Enviando...' : 'Enviar mensaje →'}
       </button>
-      {status === 'success' && <p className={styles.success}>¡Mensaje enviado! Te respondo pronto 🚀</p>}
+      {status === 'success' && <p className={styles.success}>¡Mensaje enviado! Me pondre en contacto contigo pronto</p>}
       {status === 'error' && <p className={styles.error}>Hubo un error, intenta de nuevo.</p>}
     </form>
   </div>
