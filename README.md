@@ -63,4 +63,4 @@ npm run dev
 
 ---
 
-Desarrollado con ❤️ por Diego Alejandro Paloma Díaz
+Desarrollado por Batman🦇 para Diego Alejandro Paloma diaz 
