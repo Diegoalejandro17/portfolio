@@ -1,3 +1,6 @@
+'use client'
+
+import { useScrollReveal } from '@/hooks/useScrollReveal'
 import styles from './Skills.module.css'
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaPhp, FaLaravel, FaGit, FaGithub, FaBootstrap } from 'react-icons/fa'
 import { SiNextdotjs, SiMysql, SiPostman } from 'react-icons/si'
@@ -33,13 +36,15 @@ const skillCategories = [
 ]
 
 export default function Skills() {
+    useScrollReveal()
+
   return (
     <section className={styles.skills} id="skills">
-      <div className={styles.sectionLabel}>
+      <div className={`${styles.sectionLabel} reveal`}>
         <span>03</span> Habilidades
       </div>
-      <h2 className={styles.sectionTitle}>Mi stack<br />tecnológico.</h2>
-      <div className={styles.grid}>
+      <h2 className={`${styles.sectionTitle} reveal reveal-delay-1`}>Mi stack<br />tecnológico.</h2>
+      <div className={`${styles.grid} reveal reveal-delay-2`}>
         {skillCategories.map((cat) => (
           <div key={cat.title} className={styles.category}>
             <div className={styles.catTitle}>{cat.title}</div>

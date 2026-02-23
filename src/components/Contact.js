@@ -1,5 +1,6 @@
 'use client'
 
+import { useScrollReveal } from '@/hooks/useScrollReveal'
 import { useState } from 'react'
 import emailjs from '@emailjs/browser'
 import styles from './Contact.module.css'
@@ -30,18 +31,20 @@ export default function Contact() {
     }
   }
 
+  useScrollReveal()
+
   return (
     <section className={styles.contact} id="contact">
-      <div className={styles.sectionLabel}>
+      <div className={`${styles.sectionLabel} reveal`}>
         <span>04</span> Contacto
       </div>
       <div className={styles.inner}>
-  <h2 className={styles.sectionTitle}>¿Tienes un<br />proyecto?</h2>
+  <h2 className={`${styles.sectionTitle} reveal reveal-delay-1`}>¿Tienes un<br />proyecto?</h2>
   <p className={styles.desc}>
     Estoy disponible para proyectos freelance, colaboraciones y
     oportunidades laborales. No dudes en escribirme.
   </p>
-  <div className={styles.grid}>
+  <div className={`${styles.grid} reveal reveal-delay-2`}>
     <div className={styles.links}>
       <a href="mailto:diegoalejandropalomadiaz576@gmail.com" className={styles.linkRow}>
         <div className={styles.linkLeft}>

@@ -1,13 +1,18 @@
+'use client'
+
+import { useScrollReveal } from '@/hooks/useScrollReveal'
 import styles from './About.module.css'
 
 export default function About() {
+    useScrollReveal()
+
     return (
-         <section className={styles.about} id="about">
-      <div className={styles.sectionLabel}>
+    <section className={styles.about} id="about">
+      <div className={`${styles.sectionLabel} reveal`}>
         <span>01</span> Sobre mí
       </div>
-      <h2 className={styles.sectionTitle}>Pasión por<br />el código.</h2>
-      <div className={styles.grid}>
+      <h2 className={`${styles.sectionTitle} reveal reveal-delay-1`}>Pasión por<br />el código.</h2>
+      <div className={`${styles.grid} reveal reveal-delay-2`}>
         <div className={styles.text}>
           <p>
             Soy <strong>Diego Alejandro Paloma Díaz</strong>, Full Stack Developer 

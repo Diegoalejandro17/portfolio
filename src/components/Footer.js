@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <footer className={styles.footer}>
             <span>Diego <span className={styles.accent}>Alejandro</span> Paloma Díaz</span>
-            <span>Diseñado & desarrollado con <span className={styles.accent}>♥</span> — 2025</span>
+            <span>Desarrollado por Batman🦇 para <span className={styles.accent}>Diego Alejandro Paloma Diaz</span> — 2026</span>
         </footer>
     )
 }

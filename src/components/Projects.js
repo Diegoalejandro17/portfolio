@@ -1,3 +1,6 @@
+'use client'
+
+import { useScrollReveal } from '@/hooks/useScrollReveal' 
 import styles from './Projects.module.css'
 
 const projects = [
@@ -28,13 +31,15 @@ const projects = [
 ]
 
 export default function Projects() {
+    useScrollReveal()
+
     return (
         <section className={styles.projects} id="projects">
-            <div className={styles.sectionLabel}>
+            <div className={`${styles.sectionLabel} reveal`}>
                 <span>02</span>Proyectos
             </div>
-            <h2 className={styles.sectionTitle}>Lo que <br />he construido</h2>
-            <div className={styles.grid}>
+            <h2 className={`${styles.sectionTitle} reveal reveal-delay-1`}>Lo que <br />he construido</h2>
+            <div className={`${styles.grid} reveal reveal-delay-2`}>
                  {projects.map((project) => (
           <div key={project.num} className={styles.card}>
             <div className={styles.cardNum}>{project.num}</div>
