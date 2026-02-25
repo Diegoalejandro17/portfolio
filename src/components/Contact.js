@@ -41,8 +41,7 @@ export default function Contact() {
       <div className={styles.inner}>
   <h2 className={`${styles.sectionTitle} reveal reveal-delay-1`}>¿Tienes un<br />proyecto?</h2>
   <p className={styles.desc}>
-    Estoy disponible para proyectos freelance, colaboraciones y
-    oportunidades laborales. No dudes en escribirme.
+    Estoy disponible para proyectos freelance, colaboraciones y oportunidades laborales. No dudes en escribirme.
   </p>
   <div className={`${styles.grid} reveal reveal-delay-2`}>
     <div className={styles.links}>

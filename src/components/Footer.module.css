@@ -2,7 +2,7 @@
   padding: 2rem 3rem;
   border-top: 1px solid var(--border);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   font-size: 0.65rem;
   color: var(--gray2);
