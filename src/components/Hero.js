@@ -15,7 +15,6 @@ export default function Hero() {
                 <p className={styles.role}>
                     Construyo experiencias digitales completas —<br />
                     desde interfaces web hasta arquitecturas backend robustas.<br />
-                    Código limpio. Soluciones reales.
                 </p>
                 <div className={styles.cta}>
                     <a href="#projects" className={styles.btnPrimary}>Ver proyectos →</a>
