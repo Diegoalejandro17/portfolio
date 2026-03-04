@@ -17,13 +17,13 @@ export default function Navbar() {
   return (
     <nav className={`${styles.nav} ${scrolled ? styles.scrolled : ''}`}>
       <a href='#hero' className={styles.logo}>
-        D<span>.</span>Paloma
+        Diego<span>.</span>Paloma
       </a>
       <div className={styles.right}>
         <ul className={styles.links}>
           <li><a href="#about">Sobre mí</a></li>
           <li><a href="#projects">Proyectos</a></li>
-          <li><a href="#skills">Skills</a></li>
+          <li><a href="#skills">Mi stack tecnologico</a></li>
           <li><a href="#contact">Contacto</a></li>
         </ul>
         <button

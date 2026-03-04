@@ -2,14 +2,14 @@
 
 import { useScrollReveal } from '@/hooks/useScrollReveal'
 import styles from './Skills.module.css'
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaPhp, FaLaravel, FaGit, FaGithub, FaBootstrap } from 'react-icons/fa'
-import { SiNextdotjs, SiMysql, SiPostman } from 'react-icons/si'
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaPhp, FaLaravel, FaGit, FaGithub, FaBootstrap, FaJava} from 'react-icons/fa'
+import { SiNextdotjs, SiMysql, SiPostman, SiPostgresql, SiPython, SiDocker, SiKubernetes, SiVercel, SiNpm, SiJupyter } from 'react-icons/si'
 
 const skillCategories = [
     {
-    title: 'Frontend',
+  title: 'Frontend',
     skills: [
-              { name: 'HTML5', icon: <FaHtml5 color="#e34f26" /> },
+      { name: 'HTML5', icon: <FaHtml5 color="#e34f26" /> },
       { name: 'CSS3', icon: <FaCss3Alt color="#1572b6" /> },
       { name: 'JavaScript', icon: <FaJs color="#f7df1e" /> },
       { name: 'React', icon: <FaReact color="#61dafb" /> },
@@ -18,21 +18,34 @@ const skillCategories = [
     ]
 },
 {
-    title: 'backend',
+  title: 'backend',
     skills: [
-         { name: 'PHP', icon: <FaPhp color="#777bb4" /> },
+      { name: 'PHP', icon: <FaPhp color="#777bb4" /> },
+      { name: 'Python', icon: <SiPython color="#3776AB" />},
+      { name: 'Java', icon: <FaJava color="#E43A3C" />},
       { name: 'Laravel', icon: <FaLaravel color="#ff2d20" /> },
       { name: 'MySQL', icon: <SiMysql color="#4479a1" /> },
+      { name: 'PostgreSQL', icon: <SiPostgresql color="#0064a5" />},
     ]
 },
 {
-    title: 'Herramientas',
+  title: 'Herramientas',
     skills: [
       { name: 'Git', icon: <FaGit color="#f05032" /> },
       { name: 'GitHub', icon: <FaGithub color="#ffffff" /> },
       { name: 'Postman', icon: <SiPostman color="#ff6c37" /> },
+      { name: "npm", icon: <SiNpm color="#CB3837" /> },
+      { name: "Jupyter", icon: <SiJupyter color="#F37626" /> },
     ]
-  }
+},
+{
+  title: "DevOps & Cloud",
+    skills: [
+      { name: "Docker", icon: <SiDocker color="#2496ED" /> },
+      { name: "Kubernetes", icon: <SiKubernetes color="#326CE5" /> },
+      { name: "Vercel", icon: <SiVercel color="#FFFFFF" /> },
+    ]
+}
 ]
 
 export default function Skills() {
