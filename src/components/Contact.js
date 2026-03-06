@@ -45,16 +45,6 @@ export default function Contact() {
   </p>
   <div className={`${styles.grid} reveal reveal-delay-2`}>
     <div className={styles.links}>
-      <a href="mailto:diegoalejandropalomadiaz576@gmail.com" className={styles.linkRow}>
-        <div className={styles.linkLeft}>
-          <FaEnvelope className={styles.linkIcon} />
-          <div>
-            <div className={styles.linkLabel}>Email</div>
-            <div className={styles.linkValue}>diegoalejandropalomadiaz576@gmail.com</div>
-          </div>
-        </div>
-        <span className={styles.arrow}>→</span>
-      </a>
       <a href="https://github.com/Diegoalejandro17" target="_blank" className={styles.linkRow}>
         <div className={styles.linkLeft}>
           <FaGithub className={styles.linkIcon} />
