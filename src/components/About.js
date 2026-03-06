@@ -26,7 +26,7 @@ export default function About() {
             desarrollando APIs sólidas con Laravel y PHP, conectadas a bases 
             de datos MySQL.
           </p>
-          <p>Creo en el código limpio, la colaboración efectiva y en aprender algo nuevo cada día.</p>
+          <p></p>
           <div className={styles.stats}>
             <div className={styles.statBox}>
               <div className={styles.statNum}>3+</div>

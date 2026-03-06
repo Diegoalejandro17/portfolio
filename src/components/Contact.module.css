@@ -3,7 +3,6 @@
   background: var(--bg);
 }
 
-/* Label superior */
 .sectionLabel {
   display: flex;
   align-items: center;
@@ -22,14 +21,12 @@
   color: var(--gray2);
 }
 
-/* Contenedor */
 .inner {
   max-width: 600px;
   margin: 0 auto;
   width: 100%;
 }
 
-/* Grid principal */
 .grid {
   display: flex;
   flex-direction: column;
@@ -37,7 +34,6 @@
   width: 100%;
 }
 
-/* Título */
 .sectionTitle {
   font-family: var(--font-display);
   font-size: clamp(2rem, 5vw, 4rem);
@@ -48,7 +44,6 @@
   text-align: center;
 }
 
-/* Descripción */
 .desc {
   font-size: 0.85rem;
   color: var(--gray);
@@ -57,7 +52,6 @@
   text-align: center;
 }
 
-/* Links */
 .links {
   display: flex;
   flex-direction: column;
@@ -130,7 +124,6 @@
   color: var(--purple-hover);
 }
 
-/* Formulario */
 .form {
   display: flex;
   flex-direction: column;
@@ -143,7 +136,6 @@
   flex-direction: column;
 }
 
-/* Inputs */
 .input,
 .textarea {
   background: var(--bg2);
@@ -156,7 +148,7 @@
   transition: border-color 0.3s;
   resize: none;
   width: 100%;
-  box-sizing: border-box; /* 🔥 ARREGLO IMPORTANTE */
+  box-sizing: border-box;
 }
 
 .input:focus,
@@ -169,7 +161,6 @@
   color: var(--gray2);
 }
 
-/* Botón */
 .btn {
   display: flex;
   align-items: center;
@@ -200,7 +191,6 @@
   cursor: not-allowed;
 }
 
-/* Mensajes */
 .success {
   font-size: 0.78rem;
   color: #28c840;
@@ -213,7 +203,6 @@
   margin-top: 0.5rem;
 }
 
-/* RESPONSIVE */
 @media (max-width: 600px) {
   .contact {
     padding: 4rem 1rem;

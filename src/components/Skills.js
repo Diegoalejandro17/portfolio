@@ -3,7 +3,7 @@
 import { useScrollReveal } from '@/hooks/useScrollReveal'
 import styles from './Skills.module.css'
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaPhp, FaLaravel, FaGit, FaGithub, FaBootstrap, FaJava} from 'react-icons/fa'
-import { SiNextdotjs, SiMysql, SiPostman, SiPostgresql, SiPython, SiDocker, SiKubernetes, SiVercel, SiNpm, SiJupyter } from 'react-icons/si'
+import { SiNextdotjs, SiMysql, SiPostman, SiPostgresql, SiPython, SiDocker, SiKubernetes, SiVercel, SiNpm, SiJupyter, SiComposer } from 'react-icons/si'
 
 const skillCategories = [
     {
@@ -35,6 +35,7 @@ const skillCategories = [
       { name: 'GitHub', icon: <FaGithub color="#ffffff" /> },
       { name: 'Postman', icon: <SiPostman color="#ff6c37" /> },
       { name: "npm", icon: <SiNpm color="#CB3837" /> },
+      { name: "Composer", icon: <SiComposer color="#440E03" />},
       { name: "Jupyter", icon: <SiJupyter color="#F37626" /> },
     ]
 },
